@@ -39,6 +39,7 @@ public class UpdateCatchIngJob{
 	public void build() {
 		  log.info("每3秒执行一次，查看音乐人直播在线标识!");
 		  
+		  
 	}
 } 
 
