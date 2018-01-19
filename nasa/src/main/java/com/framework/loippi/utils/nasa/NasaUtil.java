@@ -22,6 +22,9 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.json.simple.JSONObject;
 
+import com.framework.loippi.controller.api.result.UserEvaluationSetResult;
+import com.framework.loippi.utils.JsonUtils;
+
 
 
 public class NasaUtil {
@@ -47,10 +50,24 @@ public class NasaUtil {
         hashMap.put("q", "comet");
         hashMap.put("page", "1");
         //hashMap.put("year_start", "2017");
-        System.out.println(requestForGetHttp("https://images-api.nasa.gov/search", hashMap));
+        //System.out.println(requestForGetHttp("https://images-api.nasa.gov/search", hashMap));
+        
+        String evaluationSet = "[{\"id\":9,\"context\":\"测试评论\",\"image\":\"www.baidu.com\"},{\"id\":10,\"context\":\"测试评论\",\"image\":\"www.baidu.com\"}]";
+        
+        //[{"id":9,"context":"测试评论"},{"id":10,"context":"测试评论"}]
+        
+        List<UserEvaluationSetResult> userEvaluationSetResultList = (List<UserEvaluationSetResult>) JsonUtils
+				.getList4Json(evaluationSet, UserEvaluationSetResult.class);
+        
+        for (UserEvaluationSetResult userEvaluationSetResult : userEvaluationSetResultList) {
+			System.out.println(userEvaluationSetResult.getId() + userEvaluationSetResult.getContext() +
+			userEvaluationSetResult.getImage());
+		}
         
     }
 
+    
+    
     public static String requestForGetHttp(String url,Map requestParams) throws Exception{
         String result = null;
         CloseableHttpClient httpClient = HttpClients.createDefault();

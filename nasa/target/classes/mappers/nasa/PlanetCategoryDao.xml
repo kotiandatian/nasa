@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.framework.loippi.dao.PlanetCategoryDao">
+	
+	<resultMap id="PlanetCategoryResultMap" type="com.framework.loippi.entity.PlanetCategory">
+		<id property="id" column="id"  />
+		<result property="nameZh" column="name_zh" />
+		<result property="nameEn" column="name_en" />
+		<result property="describeZh" column="describe_zh" />
+		<result property="describeEn" column="describe_en" />
+		<result property="status" column="status" />
+		<result property="sort" column="sort" />
+		<result property="uuid" column="uuid" />
+		<result property="published" column="published" />
+		<result property="updateTime" column="update_time" />
+		<result property="createTime" column="create_time" />
+	</resultMap>
+	
+	<!-- 定义可重用的SQL代码段，可以包含在其他语句中 -->
+	<sql id="base_column">
+		 id ,name_zh ,name_en ,describe_zh ,describe_en ,status ,sort ,uuid ,published ,update_time ,create_time 
+	</sql>
+	
+	<sql id="base_value_column">
+		 #{id},#{nameZh},#{nameEn},#{describeZh},#{describeEn},#{status},#{sort},#{uuid},#{published},#{updateTime},#{createTime}
+	</sql>
+	
+	<!-- 定义可重用的WHERE SQL公共代码段，可以包含在其他语句中 -->
+	<sql id="where_column">
+		<if test="id != null ">
+			AND id = #{id,jdbcType=BIGINT}
+		</if>
+
+	    	<!-- 大于等于id -->
+		<if test="filter_ids != null">
+			AND id<![CDATA[>=]]>#{filter_ids}
+		</if>
+		<!-- 小于等于id -->
+	    <if test="filter_ide!= null">
+			AND id<![CDATA[<=]]>#{filter_ide}
+		</if>
+
+
+		<if test="nameZh != null ">
+			AND name_zh = #{nameZh,jdbcType=VARCHAR}
+		</if>
+	   <if test="nameZhlike != null ">
+			AND name_zh like CONCAT('%',#{nameZhlike},'%')
+		</if>
+
+
+
+		<if test="nameEn != null ">
+			AND name_en = #{nameEn,jdbcType=VARCHAR}
+		</if>
+	   <if test="nameEnlike != null ">
+			AND name_en like CONCAT('%',#{nameEnlike},'%')
+		</if>
+
+
+
+		<if test="describeZh != null ">
+			AND describe_zh = #{describeZh,jdbcType=VARCHAR}
+		</if>
+	   <if test="describeZhlike != null ">
+			AND describe_zh like CONCAT('%',#{describeZhlike},'%')
+		</if>
+
+
+
+		<if test="describeEn != null ">
+			AND describe_en = #{describeEn,jdbcType=VARCHAR}
+		</if>
+	   <if test="describeEnlike != null ">
+			AND describe_en like CONCAT('%',#{describeEnlike},'%')
+		</if>
+
+
+
+		<if test="status != null ">
+			AND status = #{status,jdbcType=INTEGER}
+		</if>
+
+	    	<!-- 大于等于status -->
+		<if test="filter_statuss != null">
+			AND status<![CDATA[>=]]>#{filter_statuss}
+		</if>
+		<!-- 小于等于status -->
+	    <if test="filter_statuse!= null">
+			AND status<![CDATA[<=]]>#{filter_statuse}
+		</if>
+
+
+		<if test="sort != null ">
+			AND sort = #{sort,jdbcType=INTEGER}
+		</if>
+
+	    	<!-- 大于等于sort -->
+		<if test="filter_sorts != null">
+			AND sort<![CDATA[>=]]>#{filter_sorts}
+		</if>
+		<!-- 小于等于sort -->
+	    <if test="filter_sorte!= null">
+			AND sort<![CDATA[<=]]>#{filter_sorte}
+		</if>
+
+
+		<if test="uuid != null ">
+			AND uuid = #{uuid,jdbcType=VARCHAR}
+		</if>
+	   <if test="uuidlike != null ">
+			AND uuid like CONCAT('%',#{uuidlike},'%')
+		</if>
+
+
+
+		<if test="published != null ">
+			AND published = #{published,jdbcType=INTEGER}
+		</if>
+
+	    	<!-- 大于等于published -->
+		<if test="filter_publisheds != null">
+			AND published<![CDATA[>=]]>#{filter_publisheds}
+		</if>
+		<!-- 小于等于published -->
+	    <if test="filter_publishede!= null">
+			AND published<![CDATA[<=]]>#{filter_publishede}
+		</if>
+
+
+		<if test="updateTime != null ">
+			AND update_time = #{updateTime,jdbcType=TIMESTAMP}
+		</if>
+	    	<!-- 大于等于update_time -->
+		<if test="filter_updateTimes != null">
+			AND date_format(update_time,'%Y%m%d')<![CDATA[>=]]>#{filter_updateTimes}
+		</if>
+		<!-- 小于等于update_time -->
+	    <if test="filter_updateTimee!= null">
+			AND date_format(update_time,'%Y%m%d')<![CDATA[<=]]>#{filter_updateTimee}
+		</if>
+
+
+
+		<if test="createTime != null ">
+			AND create_time = #{createTime,jdbcType=TIMESTAMP}
+		</if>
+	    	<!-- 大于等于create_time -->
+		<if test="filter_createTimes != null">
+			AND date_format(create_time,'%Y%m%d')<![CDATA[>=]]>#{filter_createTimes}
+		</if>
+		<!-- 小于等于create_time -->
+	    <if test="filter_createTimee!= null">
+			AND date_format(create_time,'%Y%m%d')<![CDATA[<=]]>#{filter_createTimee}
+		</if>
+
+
+
+	</sql>
+	
+	<!-- 设置语句 -->
+	<sql id="set_column">
+		<if test="id != null ">
+			id = #{id,jdbcType=BIGINT},
+		</if>
+		<if test="nameZh != null ">
+			name_zh = #{nameZh,jdbcType=VARCHAR},
+		</if>
+		<if test="nameEn != null ">
+			name_en = #{nameEn,jdbcType=VARCHAR},
+		</if>
+		<if test="describeZh != null ">
+			describe_zh = #{describeZh,jdbcType=VARCHAR},
+		</if>
+		<if test="describeEn != null ">
+			describe_en = #{describeEn,jdbcType=VARCHAR},
+		</if>
+		<if test="status != null ">
+			status = #{status,jdbcType=INTEGER},
+		</if>
+		<if test="sort != null ">
+			sort = #{sort,jdbcType=INTEGER},
+		</if>
+		<if test="uuid != null ">
+			uuid = #{uuid,jdbcType=VARCHAR},
+		</if>
+		<if test="published != null ">
+			published = #{published,jdbcType=INTEGER},
+		</if>
+		<if test="updateTime != null ">
+			update_time = #{updateTime,jdbcType=TIMESTAMP},
+		</if>
+		<if test="createTime != null ">
+			create_time = #{createTime,jdbcType=TIMESTAMP},
+		</if>
+	</sql>
+
+	<!-- 根据ID查询 -->
+	<select id="find" resultMap="PlanetCategoryResultMap">
+		SELECT	<include refid="base_column" />
+		FROM	U_PLANET_CATEGORY
+		WHERE	ID=#{id,jdbcType=BIGINT}
+	</select>
+	
+	<!-- 查询所有 -->
+	<select id="findAll" resultMap="PlanetCategoryResultMap">
+		SELECT	<include refid="base_column" />
+		FROM	U_PLANET_CATEGORY
+	</select>
+	
+	<!-- 统计记录数 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(*) FROM U_PLANET_CATEGORY
+		<where> 
+			<include refid="where_column" />
+		</where>
+	</select>
+	
+	<!-- 插入 -->
+	<insert id="insert" parameterType="com.framework.loippi.entity.PlanetCategory">
+		<selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">  
+	          SELECT LAST_INSERT_ID() AS ID    
+	    </selectKey>  
+		INSERT U_PLANET_CATEGORY 
+				(<include refid="base_column" /> )
+		VALUES	(<include refid="base_value_column" />)
+	</insert>
+	
+	<!-- 修改 -->
+	<update id="update" parameterType="com.framework.loippi.entity.PlanetCategory">
+		UPDATE	U_PLANET_CATEGORY
+		<set>
+			<include refid="set_column" />
+		</set>
+		WHERE	ID = #{id,jdbcType=BIGINT}
+	</update>
+	
+	<!-- 删除单条记录 -->
+	<delete id="delete">
+		DELETE	FROM U_PLANET_CATEGORY
+		WHERE	ID = #{id,jdbcType=BIGINT}
+	</delete>
+	
+	
+	<!-- 删除多条记录-->
+	<delete id="deleteAll">
+		DELETE	FROM U_PLANET_CATEGORY
+		WHERE	ID	IN
+    	<foreach item="PlanetCategoryId" index="index" collection="ids" open="(" separator="," close=")">
+	  		#{PlanetCategoryId} 
+		</foreach>
+	</delete>
+	
+	<!-- 分页查询列表 dao层findByPage调用这个-->
+	<select id="findByParams" resultMap="PlanetCategoryResultMap">
+		SELECT	<include refid="base_column" />
+		FROM 	U_PLANET_CATEGORY
+		<where> 1=1
+			<include refid="where_column" />
+		</where>
+		<if test="order != null and order != ''">
+			order by  ${order}
+	    </if>
+	    
+		<if test="pageNumber != null  and pageSize !=null ">
+			limit  #{pageNumber,jdbcType=INTEGER},#{pageSize,jdbcType=INTEGER}
+	     </if>
+	</select>
+	
+	<!-- 分页查询-->
+	<select id="findByPage" resultMap="PlanetCategoryResultMap">
+		SELECT
+		<include refid="base_column" />
+		FROM U_PLANET_CATEGORY
+		<where> 1=1
+			<include refid="where_column" />
+		</where>
+	</select>
+
+       <!-- 分页查询-->
+       <select id="findListByPage" resultMap="PlanetCategoryResultMap">
+		SELECT
+		<include refid="base_column" />
+		FROM U_PLANET_CATEGORY
+		<where> 1=1
+			<include refid="where_column" />
+		</where>
+					
+	     <if test="order != null and order != ''">
+		order by  ${order}
+	     </if>
+	     
+		<if test="pageNumber != null  and pageSize !=null ">
+			limit  #{pageNumber,jdbcType=INTEGER},#{pageSize,jdbcType=INTEGER}
+	     </if>
+			
+		
+	</select>
+	
+	
+		<!-- 删除多条记录-->
+	<delete id="deletes">
+		DELETE	FROM U_PLANET_CATEGORY
+		<where> 
+			<include refid="where_column" />
+		</where>
+	</delete>
+	
+
+	
+</mapper>
