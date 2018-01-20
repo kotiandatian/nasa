@@ -1,9 +1,11 @@
 package com.framework.loippi.controller.admin;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
-import com.framework.loippi.utils.ParameterUtils;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,8 +19,8 @@ import com.framework.loippi.service.PlanetCategoryService;
 import com.framework.loippi.support.Message;
 import com.framework.loippi.support.Pageable;
 import com.framework.loippi.utils.ParameterUtils;
+import com.framework.loippi.utils.RandomUtils;
 import com.framework.loippi.utils.StringUtil;
-import java.util.HashMap;
 
 /**
  * Controller - 星球类别表
@@ -50,6 +52,14 @@ public class PlanetCategoryController extends GenericController {
 	 */
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String save(PlanetCategory planetCategory, RedirectAttributes redirectAttributes) {
+		Date currentDate = new Date();
+		
+		planetCategory.setCreateTime(currentDate);
+		planetCategory.setPublished(2);//是否已经爬取（1，是  2，否）
+		planetCategory.setStatus(1);//状态（1.正常  2.禁用）
+		planetCategory.setUpdateTime(currentDate);
+		planetCategory.setUuid(RandomUtils.getRandomNumber());
+		
 		planetCategoryService.save(planetCategory);
 		addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
 		return "redirect:list.jhtml";
@@ -61,6 +71,7 @@ public class PlanetCategoryController extends GenericController {
 	@RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
 	public String edit(@PathVariable Long id, ModelMap model) {
 		PlanetCategory planetCategory = planetCategoryService.find(id);
+		
 		model.addAttribute("planetCategory", planetCategory);
 		return "/admin/planet_category/edit";
 	}
@@ -82,6 +93,8 @@ public class PlanetCategoryController extends GenericController {
 	 */
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
 	public String update(PlanetCategory planetCategory, RedirectAttributes redirectAttributes) {
+		
+		planetCategory.setUpdateTime(new Date());
 		planetCategoryService.update(planetCategory);
 		addFlashMessage(redirectAttributes, SUCCESS_MESSAGE);
 		return "redirect:list.jhtml";

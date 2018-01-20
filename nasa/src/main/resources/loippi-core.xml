@@ -25,7 +25,7 @@
 	</context:component-scan>
 	
 	
-	<task:annotation-driven />
+	<!-- <task:annotation-driven /> -->
 	
 	
 	<!-- 数据源定义,使用druid 连接池 -->

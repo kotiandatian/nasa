@@ -149,12 +149,12 @@
 			AND create_time = #{createTime,jdbcType=TIMESTAMP}
 		</if>
 	    	<!-- 大于等于create_time -->
-		<if test="filter_createTimes != null">
-			AND date_format(create_time,'%Y%m%d')<![CDATA[>=]]>#{filter_createTimes}
+		<if test="createTimes != null">
+			AND date_format(create_time,'%Y%m%d')<![CDATA[>=]]>#{createTimes}
 		</if>
 		<!-- 小于等于create_time -->
-	    <if test="filter_createTimee!= null">
-			AND date_format(create_time,'%Y%m%d')<![CDATA[<=]]>#{filter_createTimee}
+	    <if test="createTimee!= null">
+			AND date_format(create_time,'%Y%m%d')<![CDATA[<=]]>#{createTimee}
 		</if>
 
 

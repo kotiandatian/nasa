@@ -46,6 +46,12 @@ public class RandomUtils {
 		return df.format(date) + getRandomNumberString(length);
 	}
 	
+	public static String getRandomNumber() {
+		String dateFormat ="yyyyMMddHHmmssSSSS";
+		Date date = new Date();
+		DateFormat df = new SimpleDateFormat(dateFormat);
+		return df.format(date) + getRandomNumberString(6);
+	}
 	
 	
 	/**

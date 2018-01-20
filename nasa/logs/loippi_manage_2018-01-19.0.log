@@ -1,0 +1,413 @@
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Setting default value: false
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Converting 'Boolean' value 'false' to type 'Boolean'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter -     No conversion required, value is already a Boolean
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Converting 'Integer' value '0' to type 'Byte'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter -     Converted to Byte value '0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Setting default value:  
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Converting 'Character' value ' ' to type 'Character'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter -     No conversion required, value is already a Character
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Converting 'Integer' value '0' to type 'Double'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter -     Converted to Double value '0.0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Converting 'Integer' value '0' to type 'Float'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter -     Converted to Float value '0.0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Converting 'Integer' value '0' to type 'Integer'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter -     No conversion required, value is already a Integer
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Converting 'Integer' value '0' to type 'Long'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter -     Converted to Long value '0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Converting 'Integer' value '0' to type 'Short'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter -     Converted to Short value '0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter - Setting default value: 0.0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter -     No conversion required, value is already a BigDecimal
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter - Converting 'BigInteger' value '0' to type 'BigInteger'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter -     No conversion required, value is already a BigInteger
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Setting default value: false
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Converting 'Boolean' value 'false' to type 'Boolean'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter -     No conversion required, value is already a Boolean
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Converting 'Integer' value '0' to type 'Byte'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter -     Converted to Byte value '0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Setting default value:  
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Converting 'Character' value ' ' to type 'Character'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter -     No conversion required, value is already a Character
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Converting 'Integer' value '0' to type 'Double'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter -     Converted to Double value '0.0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Converting 'Integer' value '0' to type 'Float'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter -     Converted to Float value '0.0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Converting 'Integer' value '0' to type 'Integer'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter -     No conversion required, value is already a Integer
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Converting 'Integer' value '0' to type 'Long'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter -     Converted to Long value '0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Setting default value: 0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Converting 'Integer' value '0' to type 'Short'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter -     Converted to Short value '0'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.StringConverter - Setting default value: 
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.StringConverter - Converting 'String' value '' to type 'String'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Z@3e2e18f2
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'boolean[]' value '[Z@3e2e18f2' to type 'boolean[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a boolean[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [B@470f1802
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'byte[]' value '[B@470f1802' to type 'byte[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a byte[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [C@63021689
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'char[]' value '[C@63021689' to type 'char[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a char[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [D@703580bf
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'double[]' value '[D@703580bf' to type 'double[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a double[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [F@3e92efc3
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'float[]' value '[F@3e92efc3' to type 'float[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a float[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [I@1622f1b
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'int[]' value '[I@1622f1b' to type 'int[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a int[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [J@72a7c7e0
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'long[]' value '[J@72a7c7e0' to type 'long[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a long[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [S@2e4b8173
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'short[]' value '[S@2e4b8173' to type 'short[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a short[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.math.BigDecimal;@70e8f8e
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@70e8f8e' to type 'BigDecimal[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a BigDecimal[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.math.BigInteger;@17046283
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@17046283' to type 'BigInteger[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a BigInteger[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Boolean;@5bd03f44
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@5bd03f44' to type 'Boolean[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Boolean[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Byte;@29626d54
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Byte[]' value '[Ljava.lang.Byte;@29626d54' to type 'Byte[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Byte[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Character;@5a63f509
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Character[]' value '[Ljava.lang.Character;@5a63f509' to type 'Character[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Character[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Double;@6e4784bc
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Double[]' value '[Ljava.lang.Double;@6e4784bc' to type 'Double[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Double[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Float;@34b7ac2f
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Float[]' value '[Ljava.lang.Float;@34b7ac2f' to type 'Float[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Float[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Integer;@e056f20
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Integer[]' value '[Ljava.lang.Integer;@e056f20' to type 'Integer[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Integer[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Long;@4b0b0854
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Long[]' value '[Ljava.lang.Long;@4b0b0854' to type 'Long[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Long[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Short;@19bb07ed
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Short[]' value '[Ljava.lang.Short;@19bb07ed' to type 'Short[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Short[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.String;@10e41621
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'String[]' value '[Ljava.lang.String;@10e41621' to type 'String[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a String[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Class;@353d0772
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Class[]' value '[Ljava.lang.Class;@353d0772' to type 'Class[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Class[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.util.Date;@2667f029
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Date[]' value '[Ljava.util.Date;@2667f029' to type 'Date[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Date[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.util.Calendar;@57c758ac
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Calendar[]' value '[Ljava.util.Calendar;@57c758ac' to type 'Calendar[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Calendar[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.io.File;@13e39c73
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.io.File[]' value '[Ljava.io.File;@13e39c73' to type 'java.io.File[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.io.File[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Date;@9225652
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@9225652' to type 'java.sql.Date[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Date[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Time;@6a400542
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@6a400542' to type 'java.sql.Time[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Time[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Timestamp;@7e0b85f9
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@7e0b85f9' to type 'java.sql.Timestamp[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Timestamp[]
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.net.URL;@9353778
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.net.URL[]' value '[Ljava.net.URL;@9353778' to type 'java.net.URL[]'
+2018-01-19 10:35:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.net.URL[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Setting default value: false
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Converting 'Boolean' value 'false' to type 'Boolean'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter -     No conversion required, value is already a Boolean
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Converting 'Integer' value '0' to type 'Byte'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter -     Converted to Byte value '0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Setting default value:  
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Converting 'Character' value ' ' to type 'Character'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter -     No conversion required, value is already a Character
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Converting 'Integer' value '0' to type 'Double'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter -     Converted to Double value '0.0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Converting 'Integer' value '0' to type 'Float'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter -     Converted to Float value '0.0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Converting 'Integer' value '0' to type 'Integer'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter -     No conversion required, value is already a Integer
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Converting 'Integer' value '0' to type 'Long'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter -     Converted to Long value '0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Converting 'Integer' value '0' to type 'Short'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter -     Converted to Short value '0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter - Setting default value: 0.0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter -     No conversion required, value is already a BigDecimal
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter - Converting 'BigInteger' value '0' to type 'BigInteger'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter -     No conversion required, value is already a BigInteger
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Setting default value: false
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Converting 'Boolean' value 'false' to type 'Boolean'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter -     No conversion required, value is already a Boolean
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Converting 'Integer' value '0' to type 'Byte'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter -     Converted to Byte value '0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Setting default value:  
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Converting 'Character' value ' ' to type 'Character'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter -     No conversion required, value is already a Character
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Converting 'Integer' value '0' to type 'Double'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter -     Converted to Double value '0.0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Converting 'Integer' value '0' to type 'Float'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter -     Converted to Float value '0.0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Converting 'Integer' value '0' to type 'Integer'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter -     No conversion required, value is already a Integer
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Converting 'Integer' value '0' to type 'Long'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter -     Converted to Long value '0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Setting default value: 0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Converting 'Integer' value '0' to type 'Short'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter -     Converted to Short value '0'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.StringConverter - Setting default value: 
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.StringConverter - Converting 'String' value '' to type 'String'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Z@3e2e18f2
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'boolean[]' value '[Z@3e2e18f2' to type 'boolean[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a boolean[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [B@470f1802
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'byte[]' value '[B@470f1802' to type 'byte[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a byte[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [C@63021689
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'char[]' value '[C@63021689' to type 'char[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a char[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [D@703580bf
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'double[]' value '[D@703580bf' to type 'double[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a double[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [F@3e92efc3
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'float[]' value '[F@3e92efc3' to type 'float[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a float[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [I@1622f1b
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'int[]' value '[I@1622f1b' to type 'int[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a int[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [J@72a7c7e0
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'long[]' value '[J@72a7c7e0' to type 'long[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a long[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [S@2e4b8173
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'short[]' value '[S@2e4b8173' to type 'short[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a short[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.math.BigDecimal;@70e8f8e
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@70e8f8e' to type 'BigDecimal[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a BigDecimal[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.math.BigInteger;@17046283
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@17046283' to type 'BigInteger[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a BigInteger[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Boolean;@5bd03f44
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@5bd03f44' to type 'Boolean[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Boolean[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Byte;@29626d54
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Byte[]' value '[Ljava.lang.Byte;@29626d54' to type 'Byte[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Byte[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Character;@5a63f509
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Character[]' value '[Ljava.lang.Character;@5a63f509' to type 'Character[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Character[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Double;@6e4784bc
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Double[]' value '[Ljava.lang.Double;@6e4784bc' to type 'Double[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Double[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Float;@34b7ac2f
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Float[]' value '[Ljava.lang.Float;@34b7ac2f' to type 'Float[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Float[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Integer;@e056f20
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Integer[]' value '[Ljava.lang.Integer;@e056f20' to type 'Integer[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Integer[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Long;@4b0b0854
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Long[]' value '[Ljava.lang.Long;@4b0b0854' to type 'Long[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Long[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Short;@19bb07ed
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Short[]' value '[Ljava.lang.Short;@19bb07ed' to type 'Short[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Short[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.String;@10e41621
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'String[]' value '[Ljava.lang.String;@10e41621' to type 'String[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a String[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Class;@353d0772
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Class[]' value '[Ljava.lang.Class;@353d0772' to type 'Class[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Class[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.util.Date;@2667f029
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Date[]' value '[Ljava.util.Date;@2667f029' to type 'Date[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Date[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.util.Calendar;@57c758ac
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Calendar[]' value '[Ljava.util.Calendar;@57c758ac' to type 'Calendar[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Calendar[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.io.File;@13e39c73
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.io.File[]' value '[Ljava.io.File;@13e39c73' to type 'java.io.File[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.io.File[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Date;@9225652
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@9225652' to type 'java.sql.Date[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Date[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Time;@6a400542
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@6a400542' to type 'java.sql.Time[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Time[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Timestamp;@7e0b85f9
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@7e0b85f9' to type 'java.sql.Timestamp[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Timestamp[]
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.net.URL;@9353778
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.net.URL[]' value '[Ljava.net.URL;@9353778' to type 'java.net.URL[]'
+2018-01-19 10:36:12 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.net.URL[]
+2018-01-19 10:36:12 [main] WARN  net.sf.json.JSONObject - Tried to assign property image:java.lang.String to bean of class com.framework.loippi.controller.api.UserEvaluationSetResult
+2018-01-19 10:36:12 [main] WARN  net.sf.json.JSONObject - Tried to assign property image:java.lang.String to bean of class com.framework.loippi.controller.api.UserEvaluationSetResult
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Setting default value: false
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Converting 'Boolean' value 'false' to type 'Boolean'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter -     No conversion required, value is already a Boolean
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Converting 'Integer' value '0' to type 'Byte'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter -     Converted to Byte value '0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Setting default value:  
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Converting 'Character' value ' ' to type 'Character'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter -     No conversion required, value is already a Character
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Converting 'Integer' value '0' to type 'Double'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter -     Converted to Double value '0.0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Converting 'Integer' value '0' to type 'Float'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter -     Converted to Float value '0.0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Converting 'Integer' value '0' to type 'Integer'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter -     No conversion required, value is already a Integer
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Converting 'Integer' value '0' to type 'Long'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter -     Converted to Long value '0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Converting 'Integer' value '0' to type 'Short'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter -     Converted to Short value '0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter - Setting default value: 0.0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter -     No conversion required, value is already a BigDecimal
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter - Converting 'BigInteger' value '0' to type 'BigInteger'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter -     No conversion required, value is already a BigInteger
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Setting default value: false
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter - Converting 'Boolean' value 'false' to type 'Boolean'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.BooleanConverter -     No conversion required, value is already a Boolean
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter - Converting 'Integer' value '0' to type 'Byte'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ByteConverter -     Converted to Byte value '0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Setting default value:  
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter - Converting 'Character' value ' ' to type 'Character'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.CharacterConverter -     No conversion required, value is already a Character
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter - Converting 'Integer' value '0' to type 'Double'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.DoubleConverter -     Converted to Double value '0.0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter - Converting 'Integer' value '0' to type 'Float'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.FloatConverter -     Converted to Float value '0.0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter - Converting 'Integer' value '0' to type 'Integer'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.IntegerConverter -     No conversion required, value is already a Integer
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter - Converting 'Integer' value '0' to type 'Long'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.LongConverter -     Converted to Long value '0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Setting default value: 0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter - Converting 'Integer' value '0' to type 'Short'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ShortConverter -     Converted to Short value '0'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.StringConverter - Setting default value: 
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.StringConverter - Converting 'String' value '' to type 'String'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Z@3e2e18f2
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'boolean[]' value '[Z@3e2e18f2' to type 'boolean[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a boolean[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [B@470f1802
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'byte[]' value '[B@470f1802' to type 'byte[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a byte[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [C@63021689
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'char[]' value '[C@63021689' to type 'char[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a char[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [D@703580bf
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'double[]' value '[D@703580bf' to type 'double[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a double[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [F@3e92efc3
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'float[]' value '[F@3e92efc3' to type 'float[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a float[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [I@1622f1b
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'int[]' value '[I@1622f1b' to type 'int[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a int[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [J@72a7c7e0
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'long[]' value '[J@72a7c7e0' to type 'long[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a long[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [S@2e4b8173
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'short[]' value '[S@2e4b8173' to type 'short[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a short[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.math.BigDecimal;@70e8f8e
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@70e8f8e' to type 'BigDecimal[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a BigDecimal[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.math.BigInteger;@17046283
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@17046283' to type 'BigInteger[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a BigInteger[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Boolean;@5bd03f44
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@5bd03f44' to type 'Boolean[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Boolean[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Byte;@29626d54
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Byte[]' value '[Ljava.lang.Byte;@29626d54' to type 'Byte[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Byte[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Character;@5a63f509
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Character[]' value '[Ljava.lang.Character;@5a63f509' to type 'Character[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Character[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Double;@6e4784bc
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Double[]' value '[Ljava.lang.Double;@6e4784bc' to type 'Double[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Double[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Float;@34b7ac2f
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Float[]' value '[Ljava.lang.Float;@34b7ac2f' to type 'Float[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Float[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Integer;@e056f20
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Integer[]' value '[Ljava.lang.Integer;@e056f20' to type 'Integer[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Integer[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Long;@4b0b0854
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Long[]' value '[Ljava.lang.Long;@4b0b0854' to type 'Long[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Long[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Short;@19bb07ed
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Short[]' value '[Ljava.lang.Short;@19bb07ed' to type 'Short[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Short[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.String;@10e41621
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'String[]' value '[Ljava.lang.String;@10e41621' to type 'String[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a String[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.lang.Class;@353d0772
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Class[]' value '[Ljava.lang.Class;@353d0772' to type 'Class[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Class[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.util.Date;@2667f029
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Date[]' value '[Ljava.util.Date;@2667f029' to type 'Date[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Date[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.util.Calendar;@57c758ac
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'Calendar[]' value '[Ljava.util.Calendar;@57c758ac' to type 'Calendar[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a Calendar[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.io.File;@13e39c73
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.io.File[]' value '[Ljava.io.File;@13e39c73' to type 'java.io.File[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.io.File[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Date;@9225652
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@9225652' to type 'java.sql.Date[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Date[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Time;@6a400542
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@6a400542' to type 'java.sql.Time[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Time[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.sql.Timestamp;@7e0b85f9
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@7e0b85f9' to type 'java.sql.Timestamp[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.sql.Timestamp[]
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Setting default value: [Ljava.net.URL;@9353778
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter - Converting 'java.net.URL[]' value '[Ljava.net.URL;@9353778' to type 'java.net.URL[]'
+2018-01-19 10:37:33 [main] DEBUG org.apache.commons.beanutils.converters.ArrayConverter -     No conversion required, value is already a java.net.URL[]

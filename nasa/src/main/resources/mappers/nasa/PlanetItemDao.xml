@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.framework.loippi.dao.PlanetItemDao">
+	
+	<resultMap id="PlanetItemResultMap" type="com.framework.loippi.entity.PlanetItem">
+		<id property="id" column="id"  />
+		<result property="nasaId" column="nasa_id" />
+		<result property="totalHref" column="total_href" />
+		<result property="mediaType" column="media_type" />
+		<result property="hrefOrig" column="href_orig" />
+		<result property="hrefLarge" column="href_large" />
+		<result property="hrefMedium" column="href_medium" />
+		<result property="hrefSmall" column="href_small" />
+		<result property="hrefThumb" column="href_thumb" />
+		<result property="categoryId" column="category_id" />
+		<result property="categoryZh" column="category_zh" />
+		<result property="categoryEn" column="category_en" />
+		<result property="titleEn" column="title_en" />
+		<result property="titleZh" column="title_zh" />
+		<result property="descriptionZh" column="description_zh" />
+		<result property="descriptionEn" column="description_en" />
+		<result property="locationZh" column="location_zh" />
+		<result property="locationEn" column="location_en" />
+		<result property="center" column="center" />
+		<result property="dateCreated" column="date_created" />
+		<result property="published" column="published" />
+		<result property="status" column="status" />
+		<result property="updateTime" column="update_time" />
+		<result property="createTime" column="create_time" />
+	</resultMap>
+	
+	<!-- 定义可重用的SQL代码段，可以包含在其他语句中 -->
+	<sql id="base_column">
+		 id ,nasa_id ,total_href ,media_type ,href_orig ,href_large ,href_medium ,href_small ,href_thumb ,category_id ,category_zh ,category_en ,title_en ,title_zh ,description_zh ,description_en ,location_zh ,location_en ,center ,date_created ,published ,status ,update_time ,create_time 
+	</sql>
+	
+	<sql id="base_value_column">
+		 #{id},#{nasaId},#{totalHref},#{mediaType},#{hrefOrig},#{hrefLarge},#{hrefMedium},#{hrefSmall},#{hrefThumb},#{categoryId},#{categoryZh},#{categoryEn},#{titleEn},#{titleZh},#{descriptionZh},#{descriptionEn},#{locationZh},#{locationEn},#{center},#{dateCreated},#{published},#{status},#{updateTime},#{createTime}
+	</sql>
+	
+	<!-- 定义可重用的WHERE SQL公共代码段，可以包含在其他语句中 -->
+	<sql id="where_column">
+		<if test="id != null ">
+			AND id = #{id,jdbcType=BIGINT}
+		</if>
+
+	    	<!-- 大于等于id -->
+		<if test="filter_ids != null">
+			AND id<![CDATA[>=]]>#{filter_ids}
+		</if>
+		<!-- 小于等于id -->
+	    <if test="filter_ide!= null">
+			AND id<![CDATA[<=]]>#{filter_ide}
+		</if>
+
+
+		<if test="nasaId != null ">
+			AND nasa_id = #{nasaId,jdbcType=VARCHAR}
+		</if>
+	   <if test="nasaIdlike != null ">
+			AND nasa_id like CONCAT('%',#{nasaIdlike},'%')
+		</if>
+
+
+
+		<if test="totalHref != null ">
+			AND total_href = #{totalHref,jdbcType=VARCHAR}
+		</if>
+	   <if test="totalHreflike != null ">
+			AND total_href like CONCAT('%',#{totalHreflike},'%')
+		</if>
+
+
+
+		<if test="mediaType != null ">
+			AND media_type = #{mediaType,jdbcType=VARCHAR}
+		</if>
+	   <if test="mediaTypelike != null ">
+			AND media_type like CONCAT('%',#{mediaTypelike},'%')
+		</if>
+
+
+
+		<if test="hrefOrig != null ">
+			AND href_orig = #{hrefOrig,jdbcType=VARCHAR}
+		</if>
+	   <if test="hrefOriglike != null ">
+			AND href_orig like CONCAT('%',#{hrefOriglike},'%')
+		</if>
+
+
+
+		<if test="hrefLarge != null ">
+			AND href_large = #{hrefLarge,jdbcType=VARCHAR}
+		</if>
+	   <if test="hrefLargelike != null ">
+			AND href_large like CONCAT('%',#{hrefLargelike},'%')
+		</if>
+
+
+
+		<if test="hrefMedium != null ">
+			AND href_medium = #{hrefMedium,jdbcType=VARCHAR}
+		</if>
+	   <if test="hrefMediumlike != null ">
+			AND href_medium like CONCAT('%',#{hrefMediumlike},'%')
+		</if>
+
+
+
+		<if test="hrefSmall != null ">
+			AND href_small = #{hrefSmall,jdbcType=VARCHAR}
+		</if>
+	   <if test="hrefSmalllike != null ">
+			AND href_small like CONCAT('%',#{hrefSmalllike},'%')
+		</if>
+
+
+
+		<if test="hrefThumb != null ">
+			AND href_thumb = #{hrefThumb,jdbcType=VARCHAR}
+		</if>
+	   <if test="hrefThumblike != null ">
+			AND href_thumb like CONCAT('%',#{hrefThumblike},'%')
+		</if>
+
+
+
+		<if test="categoryId != null ">
+			AND category_id = #{categoryId,jdbcType=BIGINT}
+		</if>
+
+	    	<!-- 大于等于category_id -->
+		<if test="filter_categoryIds != null">
+			AND category_id<![CDATA[>=]]>#{filter_categoryIds}
+		</if>
+		<!-- 小于等于category_id -->
+	    <if test="filter_categoryIde!= null">
+			AND category_id<![CDATA[<=]]>#{filter_categoryIde}
+		</if>
+
+
+		<if test="categoryZh != null ">
+			AND category_zh = #{categoryZh,jdbcType=VARCHAR}
+		</if>
+	   <if test="categoryZhlike != null ">
+			AND category_zh like CONCAT('%',#{categoryZhlike},'%')
+		</if>
+
+
+
+		<if test="categoryEn != null ">
+			AND category_en = #{categoryEn,jdbcType=VARCHAR}
+		</if>
+	   <if test="categoryEnlike != null ">
+			AND category_en like CONCAT('%',#{categoryEnlike},'%')
+		</if>
+
+
+
+		<if test="titleEn != null ">
+			AND title_en = #{titleEn,jdbcType=VARCHAR}
+		</if>
+	   <if test="titleEnlike != null ">
+			AND title_en like CONCAT('%',#{titleEnlike},'%')
+		</if>
+
+
+
+		<if test="titleZh != null ">
+			AND title_zh = #{titleZh,jdbcType=VARCHAR}
+		</if>
+	   <if test="titleZhlike != null ">
+			AND title_zh like CONCAT('%',#{titleZhlike},'%')
+		</if>
+
+
+
+		<if test="descriptionZh != null ">
+			AND description_zh = #{descriptionZh,jdbcType=VARCHAR}
+		</if>
+	   <if test="descriptionZhlike != null ">
+			AND description_zh like CONCAT('%',#{descriptionZhlike},'%')
+		</if>
+
+
+
+		<if test="descriptionEn != null ">
+			AND description_en = #{descriptionEn,jdbcType=VARCHAR}
+		</if>
+	   <if test="descriptionEnlike != null ">
+			AND description_en like CONCAT('%',#{descriptionEnlike},'%')
+		</if>
+
+
+
+		<if test="locationZh != null ">
+			AND location_zh = #{locationZh,jdbcType=VARCHAR}
+		</if>
+	   <if test="locationZhlike != null ">
+			AND location_zh like CONCAT('%',#{locationZhlike},'%')
+		</if>
+
+
+
+		<if test="locationEn != null ">
+			AND location_en = #{locationEn,jdbcType=VARCHAR}
+		</if>
+	   <if test="locationEnlike != null ">
+			AND location_en like CONCAT('%',#{locationEnlike},'%')
+		</if>
+
+
+
+		<if test="center != null ">
+			AND center = #{center,jdbcType=VARCHAR}
+		</if>
+	   <if test="centerlike != null ">
+			AND center like CONCAT('%',#{centerlike},'%')
+		</if>
+
+
+
+		<if test="dateCreated != null ">
+			AND date_created = #{dateCreated,jdbcType=TIMESTAMP}
+		</if>
+	    	<!-- 大于等于date_created -->
+		<if test="dateCreateds != null">
+			AND date_format(date_created,'%Y%m%d')<![CDATA[>=]]>#{dateCreateds}
+		</if>
+		<!-- 小于等于date_created -->
+	    <if test="dateCreatede!= null">
+			AND date_format(date_created,'%Y%m%d')<![CDATA[<=]]>#{dateCreatede}
+		</if>
+
+
+
+		<if test="published != null ">
+			AND published = #{published,jdbcType=INTEGER}
+		</if>
+
+	    	<!-- 大于等于published -->
+		<if test="filter_publisheds != null">
+			AND published<![CDATA[>=]]>#{filter_publisheds}
+		</if>
+		<!-- 小于等于published -->
+	    <if test="filter_publishede!= null">
+			AND published<![CDATA[<=]]>#{filter_publishede}
+		</if>
+
+
+		<if test="status != null ">
+			AND status = #{status,jdbcType=INTEGER}
+		</if>
+
+	    	<!-- 大于等于status -->
+		<if test="filter_statuss != null">
+			AND status<![CDATA[>=]]>#{filter_statuss}
+		</if>
+		<!-- 小于等于status -->
+	    <if test="filter_statuse!= null">
+			AND status<![CDATA[<=]]>#{filter_statuse}
+		</if>
+
+
+		<if test="updateTime != null ">
+			AND update_time = #{updateTime,jdbcType=TIMESTAMP}
+		</if>
+	    	<!-- 大于等于update_time -->
+		<if test="filter_updateTimes != null">
+			AND date_format(update_time,'%Y%m%d')<![CDATA[>=]]>#{filter_updateTimes}
+		</if>
+		<!-- 小于等于update_time -->
+	    <if test="filter_updateTimee!= null">
+			AND date_format(update_time,'%Y%m%d')<![CDATA[<=]]>#{filter_updateTimee}
+		</if>
+
+
+
+		<if test="createTime != null ">
+			AND create_time = #{createTime,jdbcType=TIMESTAMP}
+		</if>
+	    	<!-- 大于等于create_time -->
+		<if test="createTimes != null">
+			AND date_format(create_time,'%Y%m%d')<![CDATA[>=]]>#{createTimes}
+		</if>
+		<!-- 小于等于create_time -->
+	    <if test="createTimee != null">
+			AND date_format(create_time,'%Y%m%d')<![CDATA[<=]]>#{createTimee}
+		</if>
+
+
+
+	</sql>
+	
+	<!-- 设置语句 -->
+	<sql id="set_column">
+		<if test="id != null ">
+			id = #{id,jdbcType=BIGINT},
+		</if>
+		<if test="nasaId != null ">
+			nasa_id = #{nasaId,jdbcType=VARCHAR},
+		</if>
+		<if test="totalHref != null ">
+			total_href = #{totalHref,jdbcType=VARCHAR},
+		</if>
+		<if test="mediaType != null ">
+			media_type = #{mediaType,jdbcType=VARCHAR},
+		</if>
+		<if test="hrefOrig != null ">
+			href_orig = #{hrefOrig,jdbcType=VARCHAR},
+		</if>
+		<if test="hrefLarge != null ">
+			href_large = #{hrefLarge,jdbcType=VARCHAR},
+		</if>
+		<if test="hrefMedium != null ">
+			href_medium = #{hrefMedium,jdbcType=VARCHAR},
+		</if>
+		<if test="hrefSmall != null ">
+			href_small = #{hrefSmall,jdbcType=VARCHAR},
+		</if>
+		<if test="hrefThumb != null ">
+			href_thumb = #{hrefThumb,jdbcType=VARCHAR},
+		</if>
+		<if test="categoryId != null ">
+			category_id = #{categoryId,jdbcType=BIGINT},
+		</if>
+		<if test="categoryZh != null ">
+			category_zh = #{categoryZh,jdbcType=VARCHAR},
+		</if>
+		<if test="categoryEn != null ">
+			category_en = #{categoryEn,jdbcType=VARCHAR},
+		</if>
+		<if test="titleEn != null ">
+			title_en = #{titleEn,jdbcType=VARCHAR},
+		</if>
+		<if test="titleZh != null ">
+			title_zh = #{titleZh,jdbcType=VARCHAR},
+		</if>
+		<if test="descriptionZh != null ">
+			description_zh = #{descriptionZh,jdbcType=VARCHAR},
+		</if>
+		<if test="descriptionEn != null ">
+			description_en = #{descriptionEn,jdbcType=VARCHAR},
+		</if>
+		<if test="locationZh != null ">
+			location_zh = #{locationZh,jdbcType=VARCHAR},
+		</if>
+		<if test="locationEn != null ">
+			location_en = #{locationEn,jdbcType=VARCHAR},
+		</if>
+		<if test="center != null ">
+			center = #{center,jdbcType=VARCHAR},
+		</if>
+		<if test="dateCreated != null ">
+			date_created = #{dateCreated,jdbcType=TIMESTAMP},
+		</if>
+		<if test="published != null ">
+			published = #{published,jdbcType=INTEGER},
+		</if>
+		<if test="status != null ">
+			status = #{status,jdbcType=INTEGER},
+		</if>
+		<if test="updateTime != null ">
+			update_time = #{updateTime,jdbcType=TIMESTAMP},
+		</if>
+		<if test="createTime != null ">
+			create_time = #{createTime,jdbcType=TIMESTAMP},
+		</if>
+	</sql>
+
+	<!-- 根据ID查询 -->
+	<select id="find" resultMap="PlanetItemResultMap">
+		SELECT	<include refid="base_column" />
+		FROM	U_PLANET_ITEM
+		WHERE	ID=#{id,jdbcType=BIGINT}
+	</select>
+	
+	<!-- 查询所有 -->
+	<select id="findAll" resultMap="PlanetItemResultMap">
+		SELECT	<include refid="base_column" />
+		FROM	U_PLANET_ITEM
+	</select>
+	
+	<!-- 统计记录数 -->
+	<select id="count" resultType="long">
+		SELECT COUNT(*) FROM U_PLANET_ITEM
+		<where> 
+			<include refid="where_column" />
+		</where>
+	</select>
+	
+	<!-- 插入 -->
+	<insert id="insert" parameterType="com.framework.loippi.entity.PlanetItem">
+		<selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">  
+	          SELECT LAST_INSERT_ID() AS ID    
+	    </selectKey>  
+		INSERT U_PLANET_ITEM 
+				(<include refid="base_column" /> )
+		VALUES	(<include refid="base_value_column" />)
+	</insert>
+	
+	<!-- 修改 -->
+	<update id="update" parameterType="com.framework.loippi.entity.PlanetItem">
+		UPDATE	U_PLANET_ITEM
+		<set>
+			<include refid="set_column" />
+		</set>
+		WHERE	ID = #{id,jdbcType=BIGINT}
+	</update>
+	
+	<!-- 删除单条记录 -->
+	<delete id="delete">
+		DELETE	FROM U_PLANET_ITEM
+		WHERE	ID = #{id,jdbcType=BIGINT}
+	</delete>
+	
+	
+	<!-- 删除多条记录-->
+	<delete id="deleteAll">
+		DELETE	FROM U_PLANET_ITEM
+		WHERE	ID	IN
+    	<foreach item="PlanetItemId" index="index" collection="ids" open="(" separator="," close=")">
+	  		#{PlanetItemId} 
+		</foreach>
+	</delete>
+	
+	<!-- 分页查询列表 dao层findByPage调用这个-->
+	<select id="findByParams" resultMap="PlanetItemResultMap">
+		SELECT	<include refid="base_column" />
+		FROM 	U_PLANET_ITEM
+		<where> 1=1
+			<include refid="where_column" />
+		</where>
+		<if test="order != null and order != ''">
+			order by  ${order}
+	    </if>
+	    
+		<if test="pageNumber != null  and pageSize !=null ">
+			limit  #{pageNumber,jdbcType=INTEGER},#{pageSize,jdbcType=INTEGER}
+	     </if>
+	</select>
+	
+	<!-- 分页查询-->
+	<select id="findByPage" resultMap="PlanetItemResultMap">
+		SELECT
+		<include refid="base_column" />
+		FROM U_PLANET_ITEM
+		<where> 1=1
+			<include refid="where_column" />
+		</where>
+	</select>
+
+       <!-- 分页查询-->
+       <select id="findListByPage" resultMap="PlanetItemResultMap">
+		SELECT
+		<include refid="base_column" />
+		FROM U_PLANET_ITEM
+		<where> 1=1
+			<include refid="where_column" />
+		</where>
+					
+	     <if test="order != null and order != ''">
+		order by  ${order}
+	     </if>
+	     
+		<if test="pageNumber != null  and pageSize !=null ">
+			limit  #{pageNumber,jdbcType=INTEGER},#{pageSize,jdbcType=INTEGER}
+	     </if>
+			
+		
+	</select>
+	
+	
+		<!-- 删除多条记录-->
+	<delete id="deletes">
+		DELETE	FROM U_PLANET_ITEM
+		<where> 
+			<include refid="where_column" />
+		</where>
+	</delete>
+	
+
+	
+</mapper>
