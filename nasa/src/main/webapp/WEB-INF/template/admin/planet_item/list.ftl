@@ -55,11 +55,6 @@
                             		[/#list]
                                 </select>
                             </div>
-                           
-                            
-                             
-					       
-					
 
 					         <div class="col-sm-3 m-b-xs">
                                         <select name="filter_status" class="chosen-select">

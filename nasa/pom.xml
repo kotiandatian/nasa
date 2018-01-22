@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.framework.loippi</groupId>
-	<artifactId>loippi</artifactId>
+	<artifactId>nasa</artifactId>
 	<packaging>war</packaging>
 	<version>2.0</version>
 	<name>loippi Maven Webapp</name>
@@ -790,7 +790,7 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.4</version>
 					<configuration>
-						<warName>${project.artifactId}-${project.version}</warName>
+						<warName>${project.artifactId}</warName>
 					</configuration>
 				</plugin>
 			</plugins>
