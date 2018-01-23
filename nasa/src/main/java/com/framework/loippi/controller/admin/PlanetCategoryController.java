@@ -6,6 +6,8 @@ import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,13 +16,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.framework.loippi.controller.api.result.nasa.Collection;
+import com.framework.loippi.controller.api.result.nasa.Metadata;
+import com.framework.loippi.controller.api.result.nasa.NasaResult;
 import com.framework.loippi.entity.PlanetCategory;
+import com.framework.loippi.job.UploadResourceFromNASAJob;
 import com.framework.loippi.service.PlanetCategoryService;
 import com.framework.loippi.support.Message;
 import com.framework.loippi.support.Pageable;
+import com.framework.loippi.utils.JsonUtils;
 import com.framework.loippi.utils.ParameterUtils;
 import com.framework.loippi.utils.RandomUtils;
 import com.framework.loippi.utils.StringUtil;
+import com.framework.loippi.utils.nasa.NasaUtil;
 
 /**
  * Controller - 星球类别表
@@ -134,4 +142,42 @@ public class PlanetCategoryController extends GenericController {
 		this.planetCategoryService.deleteAll(ids);
 		return SUCCESS_MESSAGE;
 	}
+	
+	/**
+	 * 校验操作
+	 * 
+	 * @param ids
+	 * @return
+	 * @throws Exception 
+	 */
+	@RequestMapping(value = { "/check" }, method = { RequestMethod.GET })
+	public @ResponseBody String check(String titleEn) throws Exception {
+		
+		String baseUrl = UploadResourceFromNASAJob.baseUrl;
+		 Map hashMap = new HashMap();
+	     hashMap.put("q", titleEn);
+	     //hashMap.put("page", "1");
+		 String masaResourceResult = NasaUtil.requestForGetHttp(baseUrl, hashMap);
+		 
+		 
+		 JSONObject jsonObject = new JSONObject(masaResourceResult);
+		 JSONObject collection = (JSONObject) jsonObject.get("collection");
+		 
+		 JSONObject metadata = (JSONObject) collection.get("metadata");
+			
+		 Integer total_hits = (Integer)metadata.get("total_hits");
+		 
+		 hashMap.put("titleEn", titleEn);
+		 hashMap.put("totalHits", 0);
+		 if(null != total_hits && total_hits != 0){
+			 System.err.println(total_hits);
+			 hashMap.put("totalHits", total_hits);
+		 }
+		 String valueToString = JSONObject.valueToString(hashMap);
+		 
+		 System.err.println(valueToString);
+		return valueToString;
+	}
+	
+	
 }

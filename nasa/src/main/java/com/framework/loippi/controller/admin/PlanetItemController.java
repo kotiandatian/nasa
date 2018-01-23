@@ -17,6 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.framework.loippi.entity.PlanetCategory;
 import com.framework.loippi.entity.PlanetItem;
+import com.framework.loippi.job.UploadResourceFromNASAJob;
 import com.framework.loippi.service.PlanetCategoryService;
 import com.framework.loippi.service.PlanetItemService;
 import com.framework.loippi.support.Message;
@@ -38,6 +39,8 @@ public class PlanetItemController extends GenericController {
 	private PlanetItemService planetItemService;
 	@Resource
 	private PlanetCategoryService planetCategoryService;
+	@Resource
+	private UploadResourceFromNASAJob updateCatchIngJob;
 	/** 
 	 * 跳转添加页面
 	 * 
@@ -155,5 +158,16 @@ public class PlanetItemController extends GenericController {
 	}
 
 	
-	
+	/**
+	 * 同步更新
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = { "/syncUpdate" }, method = { RequestMethod.GET })
+	public String syncUpdate() {
+		
+		updateCatchIngJob.UploadResourceFromNASA();
+		
+		return "redirect:list.jhtml";
+	}
 }

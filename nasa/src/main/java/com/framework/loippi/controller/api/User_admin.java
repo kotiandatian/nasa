@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.framework.loippi.api.utils.ApiUtils;
-import com.framework.loippi.job.UpdateCatchIngJob;
+import com.framework.loippi.job.UploadResourceFromNASAJob;
 
 @Controller
 @RequestMapping(value = "/nasa")
@@ -17,7 +17,7 @@ public class User_admin extends ApiBaseController {
 	@Resource(name = "taskExecutor")
 	private TaskExecutor taskExecutor;
 	@Resource
-	private UpdateCatchIngJob updateCatchIngJob;
+	private UploadResourceFromNASAJob updateCatchIngJob;
 
 	@RequestMapping(value = "/testExceutor", method = RequestMethod.GET)
 	public String testExceutor() {

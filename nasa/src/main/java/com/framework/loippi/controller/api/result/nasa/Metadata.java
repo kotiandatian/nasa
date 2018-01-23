@@ -2,15 +2,16 @@ package com.framework.loippi.controller.api.result.nasa;
 
 public class Metadata {
 
-	private Long totalHits;
+	private Long total_hits;
 
-	public Long getTotalHits() {
-		return totalHits;
+	public Long getTotal_hits() {
+		return total_hits;
 	}
 
-	public void setTotalHits(Long totalHits) {
-		this.totalHits = totalHits;
+	public void setTotal_hits(Long total_hits) {
+		this.total_hits = total_hits;
 	}
+
 	
 	
 }
