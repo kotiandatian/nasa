@@ -27,7 +27,7 @@
                     <div class="ibox-title">
                     	 <h5>星球资源表管理 </h5>
                     	 <div class="ibox-tools">
-                    	 	<!-- <a class="btn btn-outline btn-success btn-xs" id="btn-add-loippi" href="add.jhtml"><i class="fa fa-plus"></i> 新增</a> -->
+                    	 	<a class="btn btn-outline btn-success btn-xs" id="btn-add-loippi" href="syncUpdate.jhtml"><i class="fa fa-plus"></i>手动同步</a>
 	                        <a class="btn btn-outline btn-danger btn-xs btn-delete-loippi-group"><i class="fa fa-trash"></i> 删除</a>
 	                    </div>
                     </div>
@@ -122,7 +122,7 @@
 					                        <!--  <td>${(planetItem.titleZh)!''}</td> -->
 					                        <td>${(planetItem.mediaType)!''}</td>
 					                        <td>
-					                        	<img alt="" style="height:150px;width:150px;" 
+					                        	<img alt="" id="image" style="height:150px;width:150px;" 
 					                        			src="${(planetItem.hrefThumb)!''}"> 
 					                        </td>
 					                        <td>${(planetItem.categoryEn)!''}</td>
@@ -206,6 +206,16 @@
         	
         }
     </script>
+    <!--图片放大   transition：属性变化时间    transform：放大倍数 -->
+    <style type="text/css">
+			#image{
+				cursor: pointer;
+				transition: all 0.5s;
+			}
+			#image:hover{
+				transform: scale(2);
+			}
+		</style>
 </body>
 
 </html>

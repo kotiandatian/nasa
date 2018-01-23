@@ -17,12 +17,27 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                    	 <h5>新增星球类别表</h5>
-                    	 <div class="ibox-tools">
+                    <h5>新增星球类别表</h5>
+                     	<div class="ibox-tools">
                     	 	<button type="button" class="btn btn-outline btn-white btn-xs" id="btn-return-loippi" 
                     	 	onclick="location.href='${base}/admin/planet_category/list.jhtml'"><i class="fa fa-reply-all"></i> 返回列表</button>
-                        </div>
-                    </div>            	
+                         </div>
+                    	 <div class="form-group">
+                  		<div class="row">
+                  			<div class="col-sm-3">
+					        		<div class="col-sm-6 m-b-xs">
+					        			<input type="text" placeholder="请输入星球英文名" name="titleEn" id="titleEn" >
+                            		</div>
+                                <div class="input-group">
+                                     <button type="button" id="check" class="btn btn-sm btn-primary">check</button>
+                                      <span id="done"></span>
+                                </div>
+                    	   </div>
+                    	   </div>
+                  
+                    	 </div>    
+                    </div>  
+                           	
                   	<div class="ibox-content">
                   		<form id="inputForm" class="form-horizontal" action="save.jhtml" method="post">
                       
@@ -111,6 +126,24 @@
                 messages: {
 				}
             });
+            
+            
+            $("#check").click(function(){
+            
+            var titleEn = $('#titleEn').val();
+            
+            //alert(titleEn);
+            $.ajax({ 
+            	url: "check.jhtml", 
+            	data:{titleEn : titleEn},
+            	dataType:"json",
+            	success: function(data){
+            		$("#done").text(data.titleEn + " : "+ data.totalHits)
+            	
+       				//alert(data.totalHits);
+      			}});
+			});
+			
         });
     </script>
 </body>
