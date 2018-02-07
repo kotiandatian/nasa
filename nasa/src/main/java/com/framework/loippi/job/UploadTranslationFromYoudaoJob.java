@@ -49,7 +49,7 @@ public class UploadTranslationFromYoudaoJob {
 		int i = 0;
 
 		Paramap paramap = Paramap.create().put("status", 1).put("published", 2).put("pageNumber", 0).put("pageSize",
-				1010);
+				1000);
 		Date currentDate = new Date();
 		List<PlanetItem> planetItemList = planetItemService.findList(paramap);
 		if (!CollectionUtils.isEmpty(planetItemList)) {
@@ -61,9 +61,10 @@ public class UploadTranslationFromYoudaoJob {
 						planetItem2.setId(planetItem.getId());
 						// 翻译title
 						String titleZh = youdaoUtil.requestForHttpFromZh2En(planetItem.getTitleEn());
+System.err.println(titleZh);
 						// 翻译description
-						String descriptionZh = youdaoUtil.requestForHttpFromZh2En(planetItem.getTitleEn());
-
+						String descriptionZh = youdaoUtil.requestForHttpFromZh2En(planetItem.getDescriptionEn());
+System.err.println(descriptionZh);
 						planetItem2.setTitleZh(titleZh);
 						planetItem2.setDescriptionZh(descriptionZh);
 						// 更新为已翻译

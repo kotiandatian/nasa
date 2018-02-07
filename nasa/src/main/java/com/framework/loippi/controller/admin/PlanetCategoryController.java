@@ -151,31 +151,35 @@ public class PlanetCategoryController extends GenericController {
 	 * @throws Exception 
 	 */
 	@RequestMapping(value = { "/check" }, method = { RequestMethod.GET })
-	public @ResponseBody String check(String titleEn) throws Exception {
+	public @ResponseBody String check(String titleEn) {
 		
 		String baseUrl = UploadResourceFromNASAJob.baseUrl;
 		 Map hashMap = new HashMap();
 	     hashMap.put("q", titleEn);
 	     //hashMap.put("page", "1");
-		 String masaResourceResult = NasaUtil.requestForGetHttp(baseUrl, hashMap);
+		 String masaResourceResult;
+		try {
+			masaResourceResult = NasaUtil.requestForGetHttp(baseUrl, hashMap);
+			 
+			 JSONObject jsonObject = new JSONObject(masaResourceResult);
+			 JSONObject collection = (JSONObject) jsonObject.get("collection");
+			 
+			 JSONObject metadata = (JSONObject) collection.get("metadata");
+				
+			 Integer total_hits = (Integer)metadata.get("total_hits");
+			 
+			 hashMap.put("titleEn", titleEn);
+			 hashMap.put("totalHits", 0);
+			 if(null != total_hits && total_hits != 0){
+				 System.err.println(total_hits);
+				 hashMap.put("totalHits", total_hits);
+			 }
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
 		 
-		 
-		 JSONObject jsonObject = new JSONObject(masaResourceResult);
-		 JSONObject collection = (JSONObject) jsonObject.get("collection");
-		 
-		 JSONObject metadata = (JSONObject) collection.get("metadata");
-			
-		 Integer total_hits = (Integer)metadata.get("total_hits");
-		 
-		 hashMap.put("titleEn", titleEn);
-		 hashMap.put("totalHits", 0);
-		 if(null != total_hits && total_hits != 0){
-			 System.err.println(total_hits);
-			 hashMap.put("totalHits", total_hits);
-		 }
-		 String valueToString = JSONObject.valueToString(hashMap);
-		 
-		 System.err.println(valueToString);
+		String valueToString = JSONObject.valueToString(hashMap);
+		System.err.println(valueToString);
 		return valueToString;
 	}
 	

@@ -41,6 +41,10 @@ public class PlanetItem implements GenericEntity {
 	@Column(name = "total_href" )
 	private String totalHref;
 	
+	/** 是否获取全部类型的图片（1是  2.否） */
+	@Column(name = "total_status" )
+	private Integer totalStatus;
+	
 	/** 资源类型 */
 	@Column(name = "media_type" )
 	private String mediaType;
@@ -169,5 +173,7 @@ public class PlanetItem implements GenericEntity {
 		
 		return planetItem;
 	}
+
+
 	
 }

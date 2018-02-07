@@ -66,33 +66,5 @@ public class CommonController extends GenericAPIController {
 		return ApiUtils.success(code);
 	}
 	
-	/**
-	 * 版本检测
-	 */
-	@RequestMapping(value = { "/version" }, method = RequestMethod.POST)
-	public @ResponseBody String check(HttpServletRequest request, String version,Device device) {
-		//参数验证
-		if(StringUtils.isEmpty(version)){
-			return ApiUtils.error(Xerror.PARAM_INVALID);
-		}
-		App app =	appService.find("device", device.ordinal());
-		if(app.getVersion().equalsIgnoreCase(version)){
-			return ApiUtils.success("20001","暂无更新");
-		}else{
-			return ApiUtils.success(app);
-		}
-	}
 	
-	
-
-	/**
-	 * 用户反馈
-	 */
-	@RequestMapping(value = { "/feedback" }, method =RequestMethod.POST)
-	public @ResponseBody String feedback(HttpServletRequest request,Feedback feedback) {
-		feedback.setIp(request.getRemoteAddr());
-		feedback.setCreateDate(new Date());
-		feedbackService.save(feedback);
-		return ApiUtils.success();
-	}
 }
