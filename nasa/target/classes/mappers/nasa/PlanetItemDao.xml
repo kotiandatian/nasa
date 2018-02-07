@@ -9,6 +9,7 @@
 		<id property="id" column="id"  />
 		<result property="nasaId" column="nasa_id" />
 		<result property="totalHref" column="total_href" />
+		<result property="totalStatus" column="total_status" />
 		<result property="mediaType" column="media_type" />
 		<result property="hrefOrig" column="href_orig" />
 		<result property="hrefLarge" column="href_large" />
@@ -34,11 +35,11 @@
 	
 	<!-- 定义可重用的SQL代码段，可以包含在其他语句中 -->
 	<sql id="base_column">
-		 id ,nasa_id ,total_href ,media_type ,href_orig ,href_large ,href_medium ,href_small ,href_thumb ,category_id ,category_zh ,category_en ,title_en ,title_zh ,description_zh ,description_en ,location_zh ,location_en ,center ,date_created ,published ,status ,update_time ,create_time 
+		 id ,nasa_id ,total_href ,total_status ,media_type ,href_orig ,href_large ,href_medium ,href_small ,href_thumb ,category_id ,category_zh ,category_en ,title_en ,title_zh ,description_zh ,description_en ,location_zh ,location_en ,center ,date_created ,published ,status ,update_time ,create_time 
 	</sql>
 	
 	<sql id="base_value_column">
-		 #{id},#{nasaId},#{totalHref},#{mediaType},#{hrefOrig},#{hrefLarge},#{hrefMedium},#{hrefSmall},#{hrefThumb},#{categoryId},#{categoryZh},#{categoryEn},#{titleEn},#{titleZh},#{descriptionZh},#{descriptionEn},#{locationZh},#{locationEn},#{center},#{dateCreated},#{published},#{status},#{updateTime},#{createTime}
+		 #{id},#{nasaId},#{totalHref},#{totalStatus},#{mediaType},#{hrefOrig},#{hrefLarge},#{hrefMedium},#{hrefSmall},#{hrefThumb},#{categoryId},#{categoryZh},#{categoryEn},#{titleEn},#{titleZh},#{descriptionZh},#{descriptionEn},#{locationZh},#{locationEn},#{center},#{dateCreated},#{published},#{status},#{updateTime},#{createTime}
 	</sql>
 	
 	<!-- 定义可重用的WHERE SQL公共代码段，可以包含在其他语句中 -->
@@ -64,7 +65,10 @@
 			AND nasa_id like CONCAT('%',#{nasaIdlike},'%')
 		</if>
 
-
+	
+		<if test="totalStatus != null ">
+			AND total_status = #{totalStatus,jdbcType=INTEGER}
+		</if>
 
 		<if test="totalHref != null ">
 			AND total_href = #{totalHref,jdbcType=VARCHAR}

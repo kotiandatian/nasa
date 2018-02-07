@@ -133,7 +133,11 @@
             var titleEn = $('#titleEn').val();
             
             //alert(titleEn);
-            $.ajax({ 
+            
+            if(!titleEn){
+            	alert("不能为空！");
+            }else{
+                $.ajax({ 
             	url: "check.jhtml", 
             	data:{titleEn : titleEn},
             	dataType:"json",
@@ -141,8 +145,14 @@
             		$("#done").text(data.titleEn + " : "+ data.totalHits)
             	
        				//alert(data.totalHits);
-      			}});
-			});
+      			}
+      		  });
+             
+         
+           
+			}
+            });
+           
 			
         });
     </script>
